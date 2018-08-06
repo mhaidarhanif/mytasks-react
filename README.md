@@ -26,11 +26,11 @@
 
 **Screenshot:**
 
-![Screenshot](./images/screenshot.png)
+![Screenshot](./public/images/screenshot.png)
 
 **User Experience (UX) Flow:**
 
-![User Experience Flow](./images/uxflow.png)
+![User Experience Flow](./public/images/uxflow.png)
 
 ## Features
 
