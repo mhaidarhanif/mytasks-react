@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="https://mytasks-react.mhaidarhanif.com">
-        <img src="./images/mytasks-logo.png" alt="MyTasks logo" height="80">
+        <img src="./public/images/mytasks-logo.png" alt="MyTasks logo" height="80">
         <h3 align="center">MyTasks React</h3>
     </a>
     <p align="center">A simple task management with delightful UI built using React
