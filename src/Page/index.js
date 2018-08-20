@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import Cover from '../Cover'
+import Footer from '../Footer'
+
 const PageStyled = styled.main`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
@@ -13,10 +16,16 @@ const PageStyled = styled.main`
   color: #333;
 `
 
-const Page = ({ children }) => <PageStyled>{children}</PageStyled>
+const Page = ({ children }) => (
+  <PageStyled>
+    <Cover />
+    {children}
+    <Footer />
+  </PageStyled>
+)
 
 Page.propTypes = {
-  children: PropTypes.array.isRequired
+  children: PropTypes.element.isRequired
 }
 
 export default Page

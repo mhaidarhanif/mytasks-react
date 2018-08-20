@@ -1,15 +1,13 @@
 import React from 'react'
 
 import Page from '../Page'
-import Cover from '../Cover'
-import Tasks from '../Tasks'
+import Home from '../Home'
 
 import './index.css'
 
 const App = () => (
   <Page>
-    <Cover />
-    <Tasks />
+    <Home />
   </Page>
 )
 
