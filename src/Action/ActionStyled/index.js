@@ -11,6 +11,7 @@ const ActionStyled = styled.button`
   width: 30px;
 
   color: ${({ completed }) => (completed ? '#fff' : '#ccc')};
+
   background: ${({ completed }) =>
     completed ? 'hsla(140, 50%, 50%, 1)' : null};
   border: ${({ completed }) =>
