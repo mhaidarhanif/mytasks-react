@@ -2,7 +2,6 @@ import React from 'react'
 
 import Page from '../Page'
 import Cover from '../Cover'
-
 import Todos from '../Todos'
 import Footer from '../Footer'
 

@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const PageStyled = styled.main`
-  border: 4px solid #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin: 0;
   min-height: 360px;
   min-width: 100px;
 `
