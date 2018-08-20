@@ -16,7 +16,7 @@ const DateTime = ({ value = new Date() }) => {
 }
 
 DateTime.propTypes = {
-  value: PropTypes.string.isRequired
+  value: PropTypes.string
 }
 
 export default DateTime
