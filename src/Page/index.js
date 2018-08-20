@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Page = ({ children }) => <div>{children}</div>
 
 Page.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.array.isRequired
 }
 
 export default Page
