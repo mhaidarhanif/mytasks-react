@@ -8,7 +8,9 @@ const TitleStyled = styled.h1`
   margin: 30px 0;
 `
 
-const Title = ({ value }) => <TitleStyled>{value}</TitleStyled>
+const Title = ({ value = 'Default Title' }) => (
+  <TitleStyled>{value}</TitleStyled>
+)
 
 Title.propTypes = {
   value: PropTypes.string.isRequired
