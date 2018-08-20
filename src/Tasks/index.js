@@ -2,14 +2,19 @@ import React from 'react'
 
 import DATA_TASKS from './data.json'
 
-import Task from '../Task'
+import TasksStyled from './TasksStyled'
 
-const Tasks = () => (
-  <div>
-    {DATA_TASKS.map(task => {
-      return <Task key={task.id} task={task} />
-    })}
-  </div>
-)
+class Tasks extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      tasks: DATA_TASKS
+    }
+  }
+
+  render() {
+    return <TasksStyled tasks={this.state.tasks} />
+  }
+}
 
 export default Tasks
