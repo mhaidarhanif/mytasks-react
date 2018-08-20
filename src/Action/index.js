@@ -12,7 +12,7 @@ const Action = ({ completed }) => (
 )
 
 Action.propTypes = {
-  completed: PropTypes.boolean
+  completed: PropTypes.bool
 }
 
 export default Action
