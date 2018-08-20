@@ -1,11 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-// Add this import:
-import { AppContainer } from 'react-hot-loader';
+import App from './App'
+import registerServiceWorker from './registerServiceWorker'
+
+import { AppContainer } from 'react-hot-loader'
 
 // Wrap the rendering in a function:
 const render = Component => {
@@ -15,18 +14,18 @@ const render = Component => {
       <App />
     </AppContainer>,
     document.getElementById('root')
-  );
-};
+  )
+}
 
 // Do this once
-registerServiceWorker();
+registerServiceWorker()
 
 // Render once
-render(App);
+render(App)
 
 // Webpack Hot Module Replacement API
 if (module.hot) {
   module.hot.accept('./App', () => {
-    render(App);
-  });
+    render(App)
+  })
 }
