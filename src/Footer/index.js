@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 const FooterStyled = styled.footer`
   margin-top: 20px;
+  color: #ccc;
+  text-align: center;
 `
 
 const Footer = () => (
