@@ -45,7 +45,7 @@ class PageHome extends React.Component {
 
   render() {
     return (
-      <Page to="/account" toTitle="Account" title="MyTasks" datetime>
+      <Page to="/account" toTitle="Account" title="MyTasks">
         <Tasks handleComplete={this.handleComplete} tasks={this.state.tasks} />
         <FormTaskAdd handleAdd={this.handleAdd} />
       </Page>

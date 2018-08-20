@@ -36,22 +36,26 @@ const MenuImage = styled.img`
   }
 `
 
-const Navigation = ({ to, toTitle, email = 'name@example.com' }) => (
+const Navigation = ({ to = '/', toTitle, email = 'name@example.com' }) => (
   <Nav>
     <Link to={to}>
       <NavContent>
-        <EmailStyled>{email}</EmailStyled>
-        <MenuImage
-          alt={toTitle}
-          title={toTitle}
-          src={toTitle === 'Home' ? IconTask : IconAccount}
-        />
+        {email && <EmailStyled>{email}</EmailStyled>}
+        {toTitle && (
+          <MenuImage
+            alt={toTitle}
+            title={toTitle}
+            src={toTitle === 'Home' ? IconTask : IconAccount}
+          />
+        )}
       </NavContent>
     </Link>
   </Nav>
 )
 
 Navigation.propTypes = {
+  to: PropTypes.string,
+  toTitle: PropTypes.string,
   email: PropTypes.string
 }
 
