@@ -30,7 +30,7 @@ const InputTaskAddStyled = styled.input`
   }
 
   &:focus .action.add::after {
-    content: url('../../public/images/plus-gray.svg');
+    content: url('/images/plus-gray.svg');
   }
 `
 
@@ -42,15 +42,23 @@ const ButtonTaskAddStyled = styled.button`
   float: left;
 
   &::after {
-    content: url('../../public/images/plus.svg');
+    content: url('/images/plus.svg');
     font-weight: 900;
     color: hsla(190, 100%, 50%, 1);
     transition: 200ms;
   }
 `
 
+const handleSubmit = event => {
+  event.preventDefault()
+}
+
 const FormTaskAdd = () => (
-  <FormTaskAddStyled autocomplete="off" className="segment add">
+  <FormTaskAddStyled
+    autocomplete="off"
+    className="segment add"
+    onSubmit={handleSubmit}
+  >
     <InputTaskAddStyled
       className="insert add"
       type="text"
