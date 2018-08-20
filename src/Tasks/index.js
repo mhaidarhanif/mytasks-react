@@ -12,6 +12,14 @@ class Tasks extends React.Component {
     }
   }
 
+  handleComplete(event) {
+    const newTasks = event.target
+
+    this.setState({
+      tasks: newTasks
+    })
+  }
+
   render() {
     return <TasksStyled tasks={this.state.tasks} />
   }
