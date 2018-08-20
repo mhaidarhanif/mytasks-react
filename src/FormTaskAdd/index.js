@@ -24,12 +24,17 @@ class FormTaskAdd extends React.Component {
   handleSubmit(event) {
     event.preventDefault()
 
-    // console.log({ input: this.state.input })
+    console.log({ input: this.state.input })
+
+    this.setState({
+      input: ''
+    })
   }
 
   render() {
     return (
       <FormTaskAddStyled
+        inputValue={this.state.input}
         onChange={this.handleChange}
         onSubmit={this.handleSubmit}
       />

@@ -50,12 +50,13 @@ const Button = styled.button`
   }
 `
 
-const FormTaskAddStyled = ({ onSubmit, onChange }) => (
+const FormTaskAddStyled = ({ inputValue, onSubmit, onChange }) => (
   <Form autocomplete="off" onSubmit={onSubmit}>
     <Input
       placeholder="What do you want to do?"
       type="text"
       autoFocus
+      value={inputValue}
       onChange={onChange}
     />
     <Button
