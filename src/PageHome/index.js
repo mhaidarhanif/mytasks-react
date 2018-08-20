@@ -1,12 +1,13 @@
 import React from 'react'
 import { Set } from 'immutable'
 
+import Page from '../Page'
 import Tasks from '../Tasks'
 import FormTaskAdd from '../FormTaskAdd'
 
 import DATA from './data.json'
 
-class Home extends React.Component {
+class PageHome extends React.Component {
   constructor(props) {
     super(props)
 
@@ -44,12 +45,12 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
+      <Page to="/account" toTitle="Account" title="MyTasks" datetime>
         <Tasks handleComplete={this.handleComplete} tasks={this.state.tasks} />
         <FormTaskAdd handleAdd={this.handleAdd} />
-      </div>
+      </Page>
     )
   }
 }
 
-export default Home
+export default PageHome

@@ -1,13 +1,24 @@
 import React from 'react'
 
-class Account extends React.Component {
+import Page from '../Page'
+
+class PageAccount extends React.Component {
   constructor(props) {
     super(props)
+
+    this.state = {
+      register: {},
+      login: {}
+    }
   }
 
   render() {
-    return <div>Page Account</div>
+    return (
+      <Page to="/" toTitle="Home" title="Account">
+        <p>Page Account</p>
+      </Page>
+    )
   }
 }
 
-export default Account
+export default PageAccount
