@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Page from '../Page'
+import FormAuth from '../FormAuth'
 
 class PageAccount extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class PageAccount extends React.Component {
   render() {
     return (
       <Page to="/" toTitle="Home" title="Account">
-        <p>Page Account</p>
+        <FormAuth />
       </Page>
     )
   }
