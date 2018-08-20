@@ -6,12 +6,11 @@ import registerServiceWorker from './registerServiceWorker'
 
 import { AppContainer } from 'react-hot-loader'
 
-// Wrap the rendering in a function:
 const render = Component => {
-  ReactDOM.hydrate(
-    // Wrap App inside AppContainer
+  const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate
+  renderMethod(
     <AppContainer>
-      <App />
+      <Component />
     </AppContainer>,
     document.getElementById('root')
   )
