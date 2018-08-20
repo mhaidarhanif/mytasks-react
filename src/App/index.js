@@ -1,11 +1,12 @@
 import React from 'react'
 
+import Page from '../Page'
 import Header from '../Header'
 
 const App = () => (
-  <div>
+  <Page>
     <Header />
-  </div>
+  </Page>
 )
 
 export default App

@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Name = () => <div>Name</div>
+const ContextMenu = () => <div>ContextMenu</div>
 
-export default Name
+export default ContextMenu

@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Name = () => <div>Name</div>
+const Header = () => <div>Header</div>
 
-export default Name
+export default Header

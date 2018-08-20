@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Name = () => <div>Name</div>
+const DateTime = () => <div>DateTime</div>
 
-export default Name
+export default DateTime

@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Name = () => <div>Name</div>
+const Footer = () => <div>Footer</div>
 
-export default Name
+export default Footer

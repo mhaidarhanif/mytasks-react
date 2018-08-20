@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Name = () => <div>Name</div>
+const Cover = () => <div>Cover</div>
 
-export default Name
+export default Cover

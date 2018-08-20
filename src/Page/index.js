@@ -1,5 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const Name = () => <div>Name</div>
+const Page = ({ children }) => <div>{children}</div>
 
-export default Name
+Page.propTypes = {
+  children: PropTypes.element.isRequired
+}
+
+export default Page

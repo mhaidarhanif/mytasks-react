@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Name = () => <div>Name</div>
+const Todos = () => <div>Todos</div>
 
-export default Name
+export default Todos

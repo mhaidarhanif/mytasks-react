@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Name = () => <div>Name</div>
+const Navigation = () => <div>Navigation</div>
 
-export default Name
+export default Navigation
