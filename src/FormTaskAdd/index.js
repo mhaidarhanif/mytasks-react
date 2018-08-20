@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import FormTaskAddStyled from './FormTaskAddStyled'
 
@@ -15,16 +16,15 @@ class FormTaskAdd extends React.Component {
   }
 
   handleChange(event) {
-    const input = event.target.value
     this.setState({
-      input
+      input: event.target.value
     })
   }
 
   handleSubmit(event) {
     event.preventDefault()
 
-    console.log({ input: this.state.input })
+    this.props.handleAdd(this.state.input)
 
     this.setState({
       input: ''
@@ -40,6 +40,10 @@ class FormTaskAdd extends React.Component {
       />
     )
   }
+}
+
+FormTaskAdd.propTypes = {
+  handleAdd: PropTypes.func
 }
 
 export default FormTaskAdd

@@ -1,6 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-import DATA_TASKS from './data.json'
 import TasksStyled from './TasksStyled'
 
 import Task from '../Task'
@@ -9,40 +9,30 @@ class Tasks extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      tasks: DATA_TASKS
+      tasks: props.tasks
     }
-
-    this.handleComplete = this.handleComplete.bind(this)
-  }
-
-  handleComplete(id) {
-    const newTasks = this.state.tasks.map(task => {
-      if (task.id === id) {
-        task.completed = !task.completed
-      }
-      return task
-    })
-
-    this.setState({
-      tasks: newTasks
-    })
   }
 
   render() {
     return (
-      <TasksStyled tasks={this.state.tasks}>
-        {this.state.tasks.map(task => {
+      <TasksStyled tasks={this.props.tasks}>
+        {this.props.tasks.map(task => {
           return (
             <Task
               key={task.id}
               task={task}
-              handleComplete={() => this.handleComplete(task.id)}
+              handleComplete={() => this.props.handleComplete(task.id)}
             />
           )
         })}
       </TasksStyled>
     )
   }
+}
+
+Tasks.propTypes = {
+  tasks: PropTypes.object,
+  handleComplete: PropTypes.func
 }
 
 export default Tasks

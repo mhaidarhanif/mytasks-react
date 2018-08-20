@@ -1,0 +1,23 @@
+{
+  "counter": 3,
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Think something",
+      "created": "2018-08-08",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "text": "Write something",
+      "created": "2018-08-08",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "text": "Do something",
+      "created": "2018-08-08",
+      "completed": false
+    }
+  ]
+}

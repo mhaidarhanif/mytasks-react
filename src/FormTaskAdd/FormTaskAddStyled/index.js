@@ -69,6 +69,7 @@ const FormTaskAddStyled = ({ inputValue, onSubmit, onChange }) => (
 )
 
 FormTaskAddStyled.propTypes = {
+  inputValue: PropTypes.string,
   onSubmit: PropTypes.func,
   onChange: PropTypes.func
 }
