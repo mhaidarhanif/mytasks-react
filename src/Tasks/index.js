@@ -7,7 +7,7 @@ import Task from '../Task'
 const Tasks = () => (
   <div>
     {DATA_TASKS.map(task => {
-      return <Task key={task.id} text={task.text} />
+      return <Task key={task.id} task={task} />
     })}
   </div>
 )
