@@ -19,6 +19,22 @@
     </p>
 </p>
 
+## Table of Contents
+
+<!-- TOC -->
+
+- [MyTasks React](#mytasks-react)
+  - [Table of Contents](#table-of-contents)
+  - [Design](#design)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Development](#development)
+    - [Build](#build)
+  - [License](#license)
+  - [Code of Conduct](#code-of-conduct)
+
+<!-- /TOC -->
+
 ## Design
 
 - [Mockups on Figma](https://www.figma.com/file/fuNjneenEJZgfFRlGCe0aCtp/MyTasks?node-id=9%3A307)
@@ -40,6 +56,44 @@
 - Mark tasks as incomplete
 - Delete tasks
 - Cancel delete tasks
+
+## Getting Started
+
+### Development
+
+Install Node.js and npm.
+
+Install dependencies.
+
+```sh
+yarn
+```
+
+Start the React development build.
+
+```sh
+yarn start
+```
+
+Start the Storybook build.
+
+```sh
+yarn storybook
+```
+
+### Build
+
+Build the React production site.
+
+```sh
+yarn build
+```
+
+Build the Storybook production site.
+
+```sh
+yarn storybook:build
+```
 
 ## License
 
