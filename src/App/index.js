@@ -5,6 +5,8 @@ import Cover from '../Cover'
 import Todos from '../Todos'
 import Footer from '../Footer'
 
+import './index.css'
+
 const App = () => (
   <Page>
     <Cover />
