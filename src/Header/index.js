@@ -1,13 +1,20 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Title from '../Title'
 import DateTime from '../DateTime'
 
+const HeaderStyled = styled.div`
+  color: #fff;
+  padding: 10px 30px;
+  transition: 200ms;
+`
+
 const Header = () => (
-  <div>
+  <HeaderStyled>
     <Title value="MyTasks" />
-    <DateTime value="Monday, 20 August 2018 11:32" />
-  </div>
+    <DateTime />
+  </HeaderStyled>
 )
 
 export default Header

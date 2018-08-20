@@ -8,6 +8,9 @@ const PageStyled = styled.main`
   margin: 0;
   min-height: 360px;
   min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  color: #333;
 `
 
 const Page = ({ children }) => <PageStyled>{children}</PageStyled>
