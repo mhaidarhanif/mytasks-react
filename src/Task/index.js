@@ -1,13 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 
-const TaskStyled = styled.div``
+import TaskStyled from './TaskStyled'
+import Action from '../Action'
+import TaskText from '../TaskText'
 
-const Task = ({ text }) => <TaskStyled>{text}</TaskStyled>
+const Task = ({ task }) => (
+  <TaskStyled>
+    <Action completed={task.completed} />
+    <TaskText completed={task.completed} text={task.text} />
+  </TaskStyled>
+)
 
 Task.propTypes = {
-  text: PropTypes.string
+  task: PropTypes.object
 }
 
 export default Task
