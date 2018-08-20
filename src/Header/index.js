@@ -1,8 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
-import Title from '../Title'
-import DateTime from '../DateTime'
 
 const HeaderStyled = styled.div`
   color: #fff;
@@ -10,11 +8,10 @@ const HeaderStyled = styled.div`
   transition: 200ms;
 `
 
-const Header = () => (
-  <HeaderStyled>
-    <Title value="MyTasks" />
-    <DateTime />
-  </HeaderStyled>
-)
+const Header = ({ children }) => <HeaderStyled>{children}</HeaderStyled>
+
+Header.propTypes = {
+  children: PropTypes.node
+}
 
 export default Header

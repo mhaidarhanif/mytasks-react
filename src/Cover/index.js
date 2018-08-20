@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Header from '../Header'
-
 import IMAGE_COVER from './assets/cover.jpg'
 
 const CoverStyled = styled.div`
@@ -15,10 +13,6 @@ const CoverStyled = styled.div`
   min-width: 100px;
 `
 
-const Cover = () => (
-  <CoverStyled>
-    <Header />
-  </CoverStyled>
-)
+const Cover = ({ children }) => <CoverStyled>{children}</CoverStyled>
 
 export default Cover
