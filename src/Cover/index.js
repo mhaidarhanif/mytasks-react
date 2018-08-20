@@ -1,10 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-const Cover = ({ children }) => <div>{children}</div>
+import Header from '../Header'
 
-Cover.propTypes = {
-  children: PropTypes.element.isRequired
-}
+const Cover = () => (
+  <div>
+    <Header />
+  </div>
+)
 
 export default Cover
