@@ -25,3 +25,5 @@ server-build
 .DS_Store
 *.zip
 *.pdf
+
+*experiment*
